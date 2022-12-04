@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #2d3436;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+}
+
+header {
+  width: 100vw;
+  height: 80px;
+  background-color: #2d3436;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .game_name {
+  color: #f1eaea;
+  font-size: 30px;
+}
+
+main {
+  background-color: #f1eaea;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: calc(100vh - 80px - 15vh);
+}
+main .playerInfo {
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+main .playerInfo .player_name {
+  font-size: 30px;
+}
+main .playerInfo .player_score {
+  font-size: 30px;
+}
+main .game {
+  background-color: black;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: 4px solid blue;
+}
+main .game .player {
+  width: 3px;
+  height: 60px;
+  background-color: black;
+  position: relative;
+  top: 0;
+  bottom: 0;
+}
+main .game #p1 {
+  background-color: red;
+  padding-left: 10px;
+}
+main .game #p2 {
+  background-color: green;
+  padding-right: 10px;
+}
+main .game .ball {
+  border-radius: 100px;
+  background-color: white;
+  width: 8px;
+  height: 8px;
+}
+main .game .Start_bgc {
+  background: linear-gradient(90deg, green, red);
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 1px;
+  transition: 1s;
+}
+main .game .Start_bgc .Start {
+  color: rgba(246, 218, 3, 0.733);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+  cursor: pointer;
+  background: black;
+  padding: 10px;
+}
+
+.settings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+.settings input {
+  width: 40px;
+  margin-left: 10px;
+}
+
+footer {
+  height: calc(15vh - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .author {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}

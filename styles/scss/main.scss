@@ -1,0 +1,136 @@
+$black: #2d3436;
+$white: #f1eaea;
+$fs: 30px;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: $black;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .game_name {
+        color: $white;
+        font-size: $fs;
+    }
+}
+
+    main {
+        background-color: $white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: calc(100vh - 80px - 15vh);
+
+        .playerInfo {
+            position: relative;
+            top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: $fs;
+
+            .player_name {
+                font-size: $fs;
+            }
+
+            .player_score {
+                font-size: $fs;
+            }
+        }
+
+        .game {
+            background-color: black;
+            width: 600px;
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            outline: 4px solid blue;
+
+            .player {
+                width: 3px;
+                height: 60px;
+                background-color: black;
+                position: relative;
+                top: 0;
+                bottom: 0;
+            }
+
+            #p1 {
+                background-color: red;
+                padding-left: 10px;
+            }
+
+            #p2 {
+                background-color: green;
+                padding-right: 10px;
+            }
+
+            .ball {
+                border-radius: 100px;
+                background-color: white;
+                width: 8px;
+                height: 8px;
+            }
+
+            .Start_bgc {
+                background: linear-gradient(90deg, green, red);
+                position: relative;
+                display: grid;
+                place-items: center;
+                padding: 1px;
+                transition: 1s;
+
+                .Start {
+                    color: rgba(246, 218, 3, 0.733);
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    font-size: 50px;
+                    cursor: pointer;
+                    background: black;
+                    padding: 10px;
+                }
+
+            }
+
+        }
+
+    }
+
+    .settings {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+
+        input {
+            width: 40px;
+            margin-left: 10px;
+        }
+    }
+
+    footer {
+        height: calc(15vh - 30px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .author {
+            display: flex;
+            justify-content: center;
+            width: 30%;
+        }
+        
+    }
+    
